@@ -1,0 +1,6 @@
+<dbschema>
+  <schemaTable>
+    <key>t_a</key>
+    <key>t_b</key>
+  </schemaTable>
+</dbschema>

@@ -1,0 +1,9 @@
+2016-05-31 18:09:29,267 [main] INFO  NodeTask 初始化主节点环境配置信息
+2016-05-31 18:09:29,267 [main] INFO  NodeTask 节点服务已启动
+2016-05-31 18:09:29,267 [main] INFO  PNode 启动抽取模块功能
+2016-05-31 18:09:34,978 [main] INFO  NodeTask 初始化主节点环境配置信息
+2016-05-31 18:09:34,978 [main] INFO  NodeTask 节点服务已启动
+2016-05-31 18:09:34,978 [main] INFO  PNode 启动抽取模块功能
+2016-05-31 18:11:56,074 [main] INFO  NodeTask 初始化子节点环境配置信息
+2016-05-31 18:11:56,090 [main] INFO  NodeTask 节点服务已启动
+2016-05-31 18:11:56,090 [main] INFO  NodeTask 子节点服务启动成功

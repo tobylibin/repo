@@ -1,0 +1,46 @@
+<sql.transform>
+	<entry>
+		<key>test.t_a</key>
+		<rule>
+			<source.schema>test</source.schema>
+			<source.table>t_a</source.table>
+			<target.table>t1</target.table>
+			<extract.values>
+				<value>
+					<index>0</index>
+					<operations></operations>
+				</value>
+				<value>
+					<index>1</index>
+					<operations></operations>
+				</value>
+			</extract.values>
+			<apply.values>
+				<value>
+					<index>0</index>
+					<type>LONG</type>
+					<operations></operations>
+				</value>
+				<value>
+					<index>0</index>
+					<type>LONG</type>
+					<operations></operations>
+				</value>
+				<value>
+					<index>1</index>
+					<type>STRING</type>
+					<operations></operations>
+				</value>
+			</apply.values>
+			<statement>
+				merge into T1 A using( select ? as id, '$1' as name from
+				dual) B
+				on(A.ID=B.ID)
+				when MATCHED then update set A.name=B.name
+				WHEN
+				NOT MATCHED THEN insert(A.id,A.name)values( ? , ?)
+			</statement>
+			<delete> delete from T1 where id = $0 </delete>
+		</rule>
+	</entry>
+</sql.transform>

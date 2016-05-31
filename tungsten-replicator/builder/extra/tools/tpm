@@ -1,0 +1,33 @@
+#!/bin/bash
+# VMware Continuent Tungsten Replicator
+# Copyright (C) 2015 VMware, Inc. All rights reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# 
+#     http://www.apache.org/licenses/LICENSE-2.0
+#      
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# 
+# Configuration script for tungsten replicator.  Run this script to set
+# up all components. 
+
+# Check for ruby.  
+RUBY=`which ruby 2> /dev/null`
+if [ "$RUBY" = "" -o ! -x "$RUBY" ]; then
+  echo "Your system does not appear to have a ruby interpreter installed"
+  echo "Please install ruby and ensure that 'ruby --version' works"
+  exit 1
+fi
+
+# Set home and cd to it to ensure consistent working directory. 
+THOME=`dirname $0`
+cd $THOME
+
+# Run the installation with appropriate include for Ruby install files. 
+$RUBY -Iruby-tpm -Iruby-tpm/lib -I../cluster-home/lib/ruby ruby-tpm/configure.rb "$@"

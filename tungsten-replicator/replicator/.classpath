@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="test/java"/>
+	<classpathentry excluding="com/continuent/tungsten/replicator/sqlParser/grammars/test.java|com/continuent/tungsten/replicator/sqlParser/parsers/" kind="src" path="src/java"/>
+	<classpathentry kind="lib" path="lib-ext/derby.jar"/>
+	<classpathentry kind="lib" path="conf"/>
+	<classpathentry kind="lib" path="lib/js.jar"/>
+	<classpathentry kind="lib" path="lib/mongo-2.5.3.jar"/>
+	<classpathentry kind="lib" path="lib/drizzle-jdbc-1.4-SNAPSHOT.jar" sourcepath="lib/drizzle-jdbc-1.4-SNAPSHOT-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/tungsten-fsm.jar" sourcepath="lib/tungsten-fsm-src.jar"/>
+	<classpathentry kind="lib" path="lib/opencsv-2.3.jar"/>
+	<classpathentry kind="lib" path="/commons/lib/log4j-1.2.16.jar" sourcepath="/oss-commons/lib/log4j-1.2.16-sources.jar"/>
+	<classpathentry kind="lib" path="/commons/lib-test/junit-4.12.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/commons/doc/junit-4.12-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/commons/lib/velocity-1.7.jar" sourcepath="/oss-commons/lib/velocity-1.7-sources.jar"/>
+	<classpathentry kind="lib" path="/commons/lib/jackson-core-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="/commons/lib/jackson-mapper-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="/commons/lib/json_simple-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/postgresql-9.3-1102.jdbc4.jar"/>
+	<classpathentry kind="lib" path="lib/protobuf-java-2.6.1.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/commons"/>
+	<classpathentry kind="lib" path="lib/activemq-client-5.9.0.jar"/>
+	<classpathentry kind="lib" path="lib/c3p0-0.9.5.2.jar"/>
+	<classpathentry kind="lib" path="lib/c3p0-oracle-thin-extras-0.9.5.2.jar"/>
+	<classpathentry kind="lib" path="lib/geronimo-j2ee-management_1.1_spec-1.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/geronimo-jms_1.1_spec-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/javax.jms-api-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.7.5.jar"/>
+	<classpathentry kind="lib" path="lib/xstream-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.6WithEscapeProcessingFix-bin.jar"/>
+	<classpathentry kind="lib" path="lib/mchange-commons-java-0.2.11.jar"/>
+	<classpathentry kind="output" path="build/java/classes"/>
+</classpath>
